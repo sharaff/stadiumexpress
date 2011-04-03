@@ -1,0 +1,39 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div id="form">
+	<div>
+	  <%= f.label :name, "Name:" %>
+	  <%= f.text_field :name, :size => 40%></br>
+	  </div>
+  
+	  <!-- <div>
+	  	    <%= f.label :address, "Seat Number:" %>
+	  	    <%= f.text_field :address, :size =>40 %></br>
+	  	  </div> -->
+  
+	  <div>
+	    <%= f.label :email, "E-Mail:" %>
+	    <%= f.email_field :email, :size => 40 %></br>
+	  </div>
+  
+	  <div>
+	    <%= f.label :pay_type, "Pay with:" %>
+	    <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %>
+	  </div>
+  
+  
+	  <!--<%= f.submit "Place Order"%>-->
+         </br> <%= image_submit_tag('/images/placeorder.png')%>
+	<% end %>
+</div>

@@ -1,0 +1,380 @@
+/* Global styles */
+*@font-face {
+    font-family: 'StMarieThin';
+    src: url('stmarie-thin-webfont.eot');
+    src: url('stmarie-thin-webfont.eot?iefix') format('eot'),
+         url('stmarie-thin-webfont.woff') format('woff'),
+         url('stmarie-thin-webfont.ttf') format('truetype'),
+         url('stmarie-thin-webfont.svg#webfont5hcmjba2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+/*common colors
+light orange #FFDABF darker organge #EEAA77
+light blue Powderblue
+also nice blue 66CCFF
+dark grey #383838
+medium grey #686868
+dusty blue #0099CC (now 00638B) 2A458B
+dusty green #58A171
+*/
+
+#store .entry form, #store .entry form div {
+	display: inline;
+}
+
+
+#store #notice {
+        color: #000;
+        border: 2px solid red;
+        padding: 1em;
+        margin-bottom: 2em;
+        background-color: #f0f0f0;
+        font: bold smaller sans-serif;
+}
+
+
+#store h1 {
+    	font: Tahoma, sans-serif;
+		font-size: 65px;
+        color: #42426f;
+        border-bottom: 8px dotted #383838;
+		line-height: 1.5em;
+}
+
+#store h2{
+	font-size: 40px;
+}
+
+/*venue and stand double space*/
+#store table tr td{
+	line-height: 1.5em;
+}
+
+#main table tr td{
+	line-height: 1.5em;
+}
+
+#main .total_line{
+	line-height: 1.5em;
+	width: 20%;
+	font-weight: bold;
+}
+
+/* START:mainlayout */
+/* Styles for main page */
+
+#banner {
+	font: Tahoma, sans-serif;
+  background: #231f20;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0em; /*not centered but leaves room for logo*/
+  border-bottom: 10px solid #CDCDCD;
+  color: Powderblue;
+  text-align: center;
+  font-size: 0px;
+  width: 103%;
+
+}
+
+#banner img {
+  float: center;
+  height: 400px;
+  width: 700px;
+}
+
+#stripe{
+	background: #383838;
+	color: white;
+	vertical-align: top;
+	padding-top:0px;
+	border-bottom:0em solid #EEAA77;
+	font-size:24px;
+	line-height: 2em;
+	text-align:center;
+	width: 103%;
+}
+
+/*#columns {
+  background: #383838;
+  width: 100%;
+
+}*/
+
+#main {
+  padding-left: 1em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 11em good with cart*/
+  padding-top: .02em;
+  padding-bottom:5em;
+  background: white;
+  width: 1100px; /*1175px goog*/
+  
+}
+
+
+
+#main2 {
+  margin-left: 12.5em; /*column width NOTE: ADJUST AFTER SIZE SMALL, 12.5em for 4em good*/
+  margin-top: 0em;
+  padding-top: 1em;
+  padding-left: 4em;
+  padding-bottom: 10em;
+  background: white;
+  font-size: 20px;
+  width: 70%;
+  line-height: 1.25em;
+  
+}
+
+#main2 h1{
+	font-size: 40px;
+}
+
+#main2 table tr{
+	font-size: 25px;
+	text-align: left;
+}
+
+#main2 table td, #main2 table th{
+	font-size: 25px;
+	text-align: left;
+}
+
+
+
+#side2 {
+  float: left;
+  position: absolute;
+  width: 4em; /*small box width, 4em for 20px is min to get vendor login to one page*/
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  background: #383838;
+  line-height: 1em;
+}
+
+/*side font*/
+#side a {
+  color: #383838;
+  font-size: 40px;
+  line-height: 1em;
+}
+#side2 a {
+  color: Powderblue;
+  font-size: 15px;
+  line-height: 1em;
+}
+
+#columns.cust{
+	color: red;
+  font-size: 24px;
+}
+
+/* END:mainlayout */
+
+/* Styles for the cart in the main page */
+#store body{
+	width: 80%;
+}
+
+#store .cart_title {
+font-weight: 300% bold;
+font-size: 50px;
+}
+#store .item_price, #store .total_line {
+text-align: right;
+}
+#store .total_line .total_cell {
+font-weight: bold;
+border-top: 1px solid #595;
+text-align:center;
+}
+
+.cart_items td{
+	text-align:center;
+}
+
+.cart_items .subj td{
+	font-weight:bold;
+	border-bottom:2px solid #009999;
+	color:black;
+	text-align:left;
+	
+}
+
+
+/* Styles for the cart in the sidebar */
+#cart, #cart table td{
+font-size: 40px;
+color: white;
+width: 20%;
+}
+
+#main .total_line tr{
+  font-weight:bold;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 1em;
+  color: #253B78;
+}
+#cart .total_cell td{
+  font-size: 40px;
+  color: #CCFFCC;
+  font-style: italic;
+  line-height: 1em;
+  font-weight:bold;
+}
+
+#cart .cart_title{
+	font-weight: bold;
+	color: Powderblue;
+}
+
+#cart table {
+border-top: 3px dotted Midnightblue;
+border-bottom: 3px dotted Midnightblue;
+margin-bottom: 10px;
+}
+
+
+
+/* START:form */
+/* Styles for order form */
+
+
+
+.depot_form legend {
+  color: #EBF1FF;
+  background: #383838;
+  border: 4px solid #383838;
+  font-family: sans-serif;
+  padding: 0.2em .5em;
+}
+
+.depot_form label {
+  width: 10em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.depot_form select, .depot_form textarea, .depot_form input {
+  padding-top: .5em;
+  padding bottom: .5em;
+  margin-left: 0.2em;
+}
+
+.depot_form .submit {
+  margin-left: 2em;
+}
+
+.depot_form div {
+  margin: 0.5em 0;
+}
+/* END:form */
+
+
+/*VENDOR FORMATTING
+
+/* Styles for orders/index */
+#order
+
+/* Styles for products/index */
+#product_list table {
+        border-collapse: collapse;
+		border: 4px solid #58A171;
+}
+
+#product_list table tr td {
+        padding: 5px;
+        vertical-align: top;
+		line-height: 1.25em;
+}
+
+#product_list .list_image {
+  width:        60px;
+  height:       70px;
+  padding-left: 4.5em;
+}
+
+#product_list .list_description {
+  width:        60%;
+}
+
+#product_list .list_description dl {
+        margin: 0;
+}
+
+#product_list .list_description dt {
+	color:        #244;
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#product_list .list_description dd {
+        margin: 0;
+}
+
+#product_list .list_actions {
+  font-size:    small;
+  text-align:   left;
+  padding-left: 1em;
+  padding-top: 1.25em;
+}
+
+#product_list .list_line_even {
+  background:   #e0f8f8;
+}
+
+#product_list .list_line_odd {
+  background:   #E8FFE8;
+}
+
+.confirmation{
+	background: #EBF1FF;
+	border: 4px solid #383838;
+	line-height:1.2em;
+}
+
+.location{
+	padding: .1em;
+	background: white;
+	font-style: italic;
+	color: #686868;
+}
+
+.stand_lines a { color: #383838; 
+	padding: .2em;
+	margin-bottom: 3em;
+	background-color:white; 
+	border: 2px solid #CDCDCD;
+	padding:.2em;
+	line-height:2em;
+	 }
+	
+.stand_lines a:hover { color: Azure; 
+		background-color:#383838; 
+		border: 2px solid #0099CC;
+		padding:.2em;
+		}
+		
+.cart_items{
+	background:#EBF1FF;
+	border: 0px solid #383838;
+	padding-left: .5em;
+	padding-right: 1em;
+	text-align:left;
+}
+
+.subj{text-align:left;}
+
+#form{
+	background: #EBF1FF;
+	border: 4px solid #383838;
+	line-height:1.5em;
+	padding: .5em;
+	margin-left: .5em;
+}
